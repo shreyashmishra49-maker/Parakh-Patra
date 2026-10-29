@@ -1,0 +1,156 @@
+{
+  "title": "Parakh Patra AI Verification Report",
+  "spec_version": "1.0",
+  "timestamp_utc": "2026-10-29T08:25:38.045638Z",
+  "notes": "Test run on 2026-10-29 08:25:37 UTC",
+  "disclaimers": {
+    "ethical_disclaimer": "ETHICAL NOTICE: This digital signature certifies document integrity and signer identity. A valid signature DOES NOT prove that the AI model's answers are factually true, unbiased, or safe.",
+    "hardware_reproducibility_limitation": "HARDWARE REPRODUCIBILITY NOTICE: Floating-point arithmetic variations across different CPU/GPU architectures, linear algebra libraries (BLAS/MKL), and driver versions can produce subtle differences in model generation even with identical random seeds and deterministic settings (temperature = 0.0)."
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+    "revision": "main",
+    "fingerprint": {
+      "identifier": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "type": "local_snapshot",
+      "snapshot_path": "C:\\Users\\vinit\\.cache\\huggingface\\hub\\models--HuggingFaceTB--SmolLM2-135M-Instruct\\snapshots\\12fd25f77366fa6b3b4b768ec3050bf629380bac",
+      "composite_sha256": "6f006c0408935d2fdb3fe4e704da6c9cd8e6db5a673017393b683314a7dfe33e",
+      "files_count": 8,
+      "files": {
+        "config.json": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+        "generation_config.json": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+        "merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "model.safetensors": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+        "special_tokens_map.json": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+        "tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+        "tokenizer_config.json": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+        "vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+      },
+      "revision": "main"
+    }
+  },
+  "dataset": {
+    "path": "questions.jsonl",
+    "status": "verified",
+    "sha256": "7d99ad26f87657eedc2c10abb426a144a557e2e08d24354dc3e6f5bd238083c2",
+    "size_bytes": 771,
+    "total_questions": 5
+  },
+  "generation_settings": {
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "environment": {
+    "os_name": "Windows",
+    "os_release": "10",
+    "os_version": "10.0.26200",
+    "architecture": "AMD64",
+    "processor": "AMD64 Family 23 Model 24 Stepping 1, AuthenticAMD",
+    "python_version": "3.11.9",
+    "torch_version": "2.15.0+cpu",
+    "cuda_available": false,
+    "transformers_version": "5.21.0"
+  },
+  "summary": {
+    "total_questions": 5,
+    "correct_count": 3,
+    "incorrect_count": 2,
+    "accuracy_pct": 60.0,
+    "average_latency_seconds": 5.9416,
+    "total_latency_seconds": 29.7082
+  },
+  "results": [
+    {
+      "question_id": "q1",
+      "category": "knowledge",
+      "prompt": "What is the capital of France?",
+      "expected_answer": "Paris",
+      "model_answer": "The capital of France is Paris.",
+      "is_correct": true,
+      "evaluation_type": "contains",
+      "latency_seconds": 2.6416,
+      "generation_settings": {
+        "model_name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "seed": 42,
+        "temperature": 0.0,
+        "max_new_tokens": 40
+      },
+      "timestamp_utc": "2026-10-29T08:25:10.223612Z"
+    },
+    {
+      "question_id": "q2",
+      "category": "math",
+      "prompt": "What is 15 plus 27?",
+      "expected_answer": "42",
+      "model_answer": "15 + 27 = 42.",
+      "is_correct": true,
+      "evaluation_type": "contains",
+      "latency_seconds": 3.3629,
+      "generation_settings": {
+        "model_name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "seed": 42,
+        "temperature": 0.0,
+        "max_new_tokens": 40
+      },
+      "timestamp_utc": "2026-10-29T08:25:13.600607Z"
+    },
+    {
+      "question_id": "q3",
+      "category": "logic",
+      "prompt": "If all cats have tails, and Luna is a cat, does Luna have a tail? Answer yes or no.",
+      "expected_answer": "yes",
+      "model_answer": "No, Luna does not have a tail.",
+      "is_correct": false,
+      "evaluation_type": "contains",
+      "latency_seconds": 3.7883,
+      "generation_settings": {
+        "model_name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "seed": 42,
+        "temperature": 0.0,
+        "max_new_tokens": 40
+      },
+      "timestamp_utc": "2026-10-29T08:25:17.404989Z"
+    },
+    {
+      "question_id": "q4",
+      "category": "science",
+      "prompt": "Which planet is known as the Red Planet?",
+      "expected_answer": "Mars",
+      "model_answer": "The Red Planet is a planet in the outer reaches of our solar system, known as Mars. It is the second-largest planet in our solar system, after Jupiter, and is the second-largest",
+      "is_correct": true,
+      "evaluation_type": "contains",
+      "latency_seconds": 12.011,
+      "generation_settings": {
+        "model_name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "seed": 42,
+        "temperature": 0.0,
+        "max_new_tokens": 40
+      },
+      "timestamp_utc": "2026-10-29T08:25:29.430597Z"
+    },
+    {
+      "question_id": "q5",
+      "category": "reasoning",
+      "prompt": "Which is heavier: 1 kilogram of iron or 1 kilogram of cotton?",
+      "expected_answer": "same",
+      "model_answer": "To determine which is heavier, we need to compare the mass of the two objects. The mass of iron is 1 kilogram, and the mass of cotton is 1 kilogram.\n\nSince the",
+      "is_correct": false,
+      "evaluation_type": "contains",
+      "latency_seconds": 7.9044,
+      "generation_settings": {
+        "model_name": "HuggingFaceTB/SmolLM2-135M-Instruct",
+        "seed": 42,
+        "temperature": 0.0,
+        "max_new_tokens": 40
+      },
+      "timestamp_utc": "2026-10-29T08:25:37.347069Z"
+    }
+  ],
+  "report_content_sha256": "beef8a90377138efcd586a958fd9fff1c3ce03f917b6d410f60f158e46d46a1d",
+  "digital_signature": {
+    "algorithm": "Ed25519",
+    "public_key_hex": "6e5461fca1d45c57d5fd5a03aa57fba820154e670b4f23bf63929c778fac1d0d",
+    "signature_hex": "be589007bbcacaaf03abadbdd73e5d5313a3e4d1eb5b34d9c43f502d4ffa2b9a63cb3c8474d29c3784b0f96959b18f2c08476ac2a619af4bcc6d814805a09706",
+    "signed_content_hash": "beef8a90377138efcd586a958fd9fff1c3ce03f917b6d410f60f158e46d46a1d"
+  }
+}

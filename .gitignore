@@ -1,0 +1,22 @@
+# Parakh Patra - Git Ignore Configuration
+
+# Security: Never commit cryptographic private keys!
+keys/private_key.hex
+keys/private*.key
+keys/*.pem
+*.key
+*.pem
+.env
+
+# Python Virtual Environments & Cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary outputs & logs
+reports/temp_*
+.pytest_cache/
+

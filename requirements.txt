@@ -1,0 +1,7 @@
+# Parakh Patra - Core Dependencies
+streamlit>=1.30.0
+torch>=2.0.0
+transformers>=4.36.0
+cryptography>=41.0.0
+accelerate>=0.25.0
+
